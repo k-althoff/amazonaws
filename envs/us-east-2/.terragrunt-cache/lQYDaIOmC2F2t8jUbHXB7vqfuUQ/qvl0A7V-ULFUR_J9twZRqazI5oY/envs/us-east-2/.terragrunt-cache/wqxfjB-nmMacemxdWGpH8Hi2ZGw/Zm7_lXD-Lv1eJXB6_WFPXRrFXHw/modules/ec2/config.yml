@@ -1,0 +1,30 @@
+---
+ec_ami: ami-0f7919c33c90f5b58
+ec_instance_type: t2.micro
+subnet_id: subnet-051c8e45b341768e4
+ec2_name: TF-TEST
+ebs_optimized: true
+storage_size: 10
+vpc_id:  vpc-0da6c17e83865cd29
+
+mytags:
+  'Name' : "use2s1wjosh99"
+  'Owner': 'KIRK'
+  'Ticket': ''
+  'Application': 'Admin Box'
+  'Team': 'TEAM!'
+
+
+ingress_sg:
+        - from_port: 0
+          to_port: 0
+          proto: "-1"
+          src_cidr:
+            - "0.0.0.0/0"
+
+egress_sg:
+        - from_port: 0
+          to_port: 0
+          proto: "-1"
+          dst_cidr:
+            - "0.0.0.0/0"
